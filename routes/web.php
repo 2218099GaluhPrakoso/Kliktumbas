@@ -101,7 +101,6 @@ Route::get('/kategori', function () {
 })->name('kategori');
 Route::get('/umkm/{id}/profile', [UmkmController::class, 'profile'])->name('umkm.profile');
 Route::get('/umkm/{id}/products', [UmkmController::class, 'products'])->name('umkm.products');
-Route::get('/umkm/{id}', [UmkmController::class, 'profile'])->name('umkm.profile');
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/tentang', function () {
     return view('tentang');
