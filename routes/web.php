@@ -68,11 +68,7 @@ Route::middleware('auth:admin')->prefix('admin')->group(function () {
     Route::delete('/umkm/{id}', [UmkmController::class, 'destroy'])->name('admin.umkm.destroy');
 
     Route::get('/profile', [AdminProfileController::class, 'index'])->name('admin.profile');
-     Route::get('/beranda', function () {
-        return 'Halaman Beranda User';
-    })->name('beranda');
-    
-});
+     });
 
 
 
